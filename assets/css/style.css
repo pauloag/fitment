@@ -1,0 +1,103 @@
+/* RESETANDO PADDING E MARGIN DO NAVEGADOR*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*CRIANDO VARIAVEIS DO PROJETO*/
+:root{
+    --main-color:#fbb034;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+body{
+    font-family: var(--font-family-sans-serif);
+}
+
+/* @@@ HEADER AND MAIN @@@ */
+
+.home {
+    background: url(../images/banner.png) no-repeat center;
+}
+
+/* @@@ HEADER @@@ */
+
+header{
+    display: flex;
+    padding-top: 2%;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+.logo, nav{
+    font-weight: 700;
+}
+
+.logo{
+    font-size: 180%;
+}
+
+nav{
+    width: 30%;
+    margin-left: 25%;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav li {
+    list-style: none;
+}
+
+.fa-yelp{
+    color: var(--main-color);
+}
+
+/* @@@ MAIN @@@ */
+main{
+    display: flex;
+    margin: auto 3%;
+}
+
+.main_box{
+    display:flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 6%;
+    justify-content: space-between;
+}
+
+.main_h1{
+    font-size: 7vh;
+    font-weight: 400;
+}
+
+.main_h1 b{
+    font-weight: 700;
+}
+
+.main_p{
+    font-size: 3vh;
+}
+
+.main_button{
+    background-color: var(--main-color);
+    border-color: transparent;
+    width: 30%;
+    height: 15%;
+    border-radius: 5vh;
+    color: white;
+    font-weight: 600;
+}
+
+.main_img{
+    width: 50%;
+}
+
+.main_img img{
+    border-radius: 75% 25% 32% 68% / 53% 47% 53% 47%;
+}
