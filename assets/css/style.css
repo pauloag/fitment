@@ -84,7 +84,7 @@ main{
     font-size: 3vh;
 }
 
-.main_button{
+.standard_button{
     background-color: var(--main-color);
     border-color: transparent;
     width: 30%;
@@ -100,4 +100,242 @@ main{
 
 .main_img img{
     border-radius: 75% 25% 32% 68% / 53% 47% 53% 47%;
+}
+
+/* @@@ SECTION 1 @@@*/
+
+.section_1{
+    margin: 8% 7%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 3.1vh;
+}
+
+.section_1_box h2, .section_1_box_cards h3{
+    font-weight: 700;
+}
+
+.section_1_box{
+    width: 60%;
+    margin: 4% auto auto 5%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 4vh;
+}
+
+.section_1_box_cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* @@@ SECTION 2 @@@*/
+
+.section_2_box{
+    margin: 1% 5%;
+    display:grid;
+    grid-template-columns: 33% 33% 33%;
+    height: 80vh;
+}
+
+.section_2_1_3{
+    background-image: url(/assets/images/grid1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.section_2_1_3_box{
+    background-color: white;
+    margin: 10% 5%;
+}
+
+.section_2_2_3{
+    background-image: url(/assets/images/grid2.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.section_2_2_3_box{
+    background-color: white;
+    margin: 90% 20%;
+}
+
+.section_2_3_3{
+    background-image: url(/assets/images/grid3.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.section_2_3_3_box{
+    margin: -40% 15% auto 15%;
+}
+
+.section_2_3_3{
+    margin-top: 50%;
+}
+
+/* @@@ SECTION 3 @@@*/
+
+.section_3_box{
+    display: flex;
+    margin: 10% 6%;
+}
+
+.section_3_text{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    padding: 15vh 5vh;
+}
+
+.section_3_text .standard_button{
+    width: 60%;
+    height: 7vh;
+}
+
+/* @@@ SECTION 4 @@@ */
+
+
+.section_4_box{
+    display: flex;
+    margin: 10% 6%;
+}
+
+.section_4_text{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    padding: 10vh 0 0 13vh;
+}
+
+.section_4_text .standard_button{
+    width: 60%;
+    height: 7vh;
+}
+
+/* @@@ SECTION 5 @@@ */
+
+.section_5_box{
+    background-image: url(/assets/images/bg1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 2% 5%;
+    height: 100vh;
+}
+
+.section_5_text{
+    display:flex;
+    flex-direction: column;
+    padding: 10% 0 0 50%;
+    gap: 3vh;
+    font-size: 3vh;
+}
+
+/* @@@ SECTION 6 @@@ */
+
+.section_6_box{
+    display: flex;
+    flex-direction: column;
+    margin: 1% 2%;
+    align-items: center;
+    gap: 3vh;
+}
+
+.section_6_grid > img {
+    width: 100%;
+    height: 100%;
+  }
+
+.section_6_grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 2% 5%;
+}
+
+/* @@@ SECTION 7 @@@ */
+
+.section_7_box{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    margin: 5vh 20%;
+    align-items: center;
+    width: 60%;
+}
+
+.section_7_box > .standard_button{
+    width: 20%;
+    height: 6vh;
+}
+
+/* @@@ SECTION 8 @@@ */
+
+.section_8_box{
+    display: flex;
+    background-color: var(--main-color);
+    margin: 10vh 25vh;
+    padding: 10vh 15vh;
+    justify-content: space-between;
+}
+
+.section_8_text{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    color: white;
+    font-size: 3vh;
+}
+
+.section_8_submit {
+    display: flex;
+    padding: 0 10vh 0 0;
+}
+
+.section_8_submit #email_submit {
+    background-color: black;
+    color: white;
+}
+
+/* @@@ SECTION 9 @@@ */
+
+.section_9_box{
+    display: flex;
+    justify-content: space-around;
+    padding: 10vh 5vh;
+    background-color: rgba(245, 245, 245, 0.37);
+}
+
+.section_9_box dl{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.section_9_box dt{
+    padding-bottom: 3vh;
+    font-weight: 600;
+}
+
+/* @@@ SECTION 9 @@@ */
+
+.section_10_box{
+    display: flex;
+    justify-content: space-between;
+    padding: 3vh 10vh;
+    background-color: rgba(245, 245, 245, 0.897);
+    align-items: center;
+}
+
+
+.section_10_box .social_media{
+    display: flex;
+    gap: 3vh;
+}
+
+.section_10_box .social_media a i{
+    font-size: 3vh;
+    padding: 25%;
+    color: white;
+    background-color:  var(--main-color);
+    border-radius: 50%;
 }
