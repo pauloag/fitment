@@ -7,25 +7,33 @@
 /*CRIANDO VARIAVEIS DO PROJETO*/
 :root{
     --main-color:#fbb034;
+    --font-color:#707070;
     --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 body{
     font-family: var(--font-family-sans-serif);
+    background: var(--bg-color);
+    
 }
 
-/* @@@ HEADER AND MAIN @@@ */
+/* HIDDING TOOLBAR */
+
+body::-webkit-scrollbar {
+    display: none;
+  }
 
 .home {
-    background: url(../images/banner.png) no-repeat center;
+    background:url(../images/banner.png) no-repeat bottom;
+    min-height: 100vh;
 }
 
 /* @@@ HEADER @@@ */
 
 header{
     display: flex;
-    padding-top: 2%;
+    padding-top: 1.5%;
     justify-content: space-around;
     align-items: center;
     margin-bottom: 2%;
@@ -37,42 +45,70 @@ header{
 
 .logo{
     font-size: 180%;
+    margin-left: -3%;
+}
+
+.logo .fa-yelp{
+    color: var(--main-color);
 }
 
 nav{
-    width: 30%;
-    margin-left: 25%;
+    width: 40%;
 }
 
 header nav ul {
     display: flex;
     justify-content: space-between;
+    margin-left: 35%;
 }
 
 header nav li {
     list-style: none;
+    font-size: 95%;
 }
 
-.fa-yelp{
+.main_search_box{
+    margin-left: -8%;
+}
+
+.main_search_box input{
+    border: none;
+    color:rgb(187, 187, 187);
+    background-color: white;
+    border-radius: 10vh;
+    width: 33vh;
+    height: 6vh;
+    padding-left: 5%;
+}
+
+.fa-magnifying-glass{
+    margin-left: -15%;
     color: var(--main-color);
 }
 
+.change_theme_button .material-symbols-outlined{
+    color: white;
+    font-size: 4vh;
+    margin-left: -22vh;
+}
+
 /* @@@ MAIN @@@ */
+
 main{
     display: flex;
-    margin: auto 3%;
 }
 
 .main_box{
     display:flex;
     flex-direction: column;
     width: 50%;
-    padding: 6%;
+    padding: 6% 8%;
     justify-content: space-between;
+    gap: 4vh;
 }
 
 .main_h1{
-    font-size: 7vh;
+    font-size: 8vh;
     font-weight: 400;
 }
 
@@ -81,17 +117,22 @@ main{
 }
 
 .main_p{
-    font-size: 3vh;
+    font-size: 2.6vh;
+    color: var(--font-color);
 }
 
 .standard_button{
     background-color: var(--main-color);
     border-color: transparent;
-    width: 30%;
-    height: 15%;
+    height: 8vh;
     border-radius: 5vh;
     color: white;
     font-weight: 600;
+}
+
+#main_button{
+    width: 35%;
+    margin-top: 5%;
 }
 
 .main_img{
@@ -108,7 +149,13 @@ main{
     margin: 8% 7%;
     display: flex;
     justify-content: space-between;
-    font-size: 3.1vh;
+    font-size: 3.8vh;
+}
+
+.section_1 p{
+    color:var(--font-color);
+    font-size: 2.6vh;
+    line-height: 4vh;
 }
 
 .section_1_box h2, .section_1_box_cards h3{
@@ -117,15 +164,16 @@ main{
 
 .section_1_box{
     width: 60%;
-    margin: 4% auto auto 5%;
+    margin: 4% 5%;
     display: flex;
     flex-direction: column;
-    row-gap: 4vh;
+    gap: 4vh;
 }
 
 .section_1_box_cards{
     display: flex;
     justify-content: space-between;
+    padding-top: 10%;
 }
 
 /* @@@ SECTION 2 @@@*/
@@ -145,7 +193,19 @@ main{
 
 .section_2_1_3_box{
     background-color: white;
-    margin: 10% 5%;
+    margin: 50% 5%;
+    padding: 6%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap:2vh;
+    font-size: 3vh;
+    border-radius: 1vh;
+}
+
+.section_2_1_3_box p, .section_2_2_3_box p, .section_2_3_3_box p{
+    color: var(--font-color);
+    font-size: 2.8vh;
 }
 
 .section_2_2_3{
@@ -156,7 +216,12 @@ main{
 
 .section_2_2_3_box{
     background-color: white;
-    margin: 90% 20%;
+    margin: 85% 20%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    font-size: 3vh;
 }
 
 .section_2_3_3{
@@ -166,7 +231,12 @@ main{
 }
 
 .section_2_3_3_box{
-    margin: -40% 15% auto 15%;
+    display: flex;
+    flex-direction: column;
+    margin: -43% 15% auto 15%;
+    text-align: center;
+    gap: 2vh;
+    font-size: 3vh;
 }
 
 .section_2_3_3{
@@ -177,39 +247,78 @@ main{
 
 .section_3_box{
     display: flex;
-    margin: 10% 6%;
+    margin: 8% 6%;
+    text-align: justify;
+}
+
+.section_3_text h3{
+    font-size: 4vh;
+    font-weight: 600;
 }
 
 .section_3_text{
     display: flex;
     flex-direction: column;
-    gap: 3vh;
-    padding: 15vh 5vh;
+    gap: 2vh;
+    width: 30%;
+    padding: 5% 5% 5% 2%;
+    font-size: 2.5vh;
+}
+
+.section_3_text p{
+    color:var(--font-color);
 }
 
 .section_3_text .standard_button{
     width: 60%;
-    height: 7vh;
+    height: 8vh;
+    margin-top: 4vh;
+    font-size: 2.6vh;
 }
+
+.section_3_img{
+    width: 60%;
+    height: 80%;
+    border-radius: 1vh;
+}
+
 
 /* @@@ SECTION 4 @@@ */
 
+.section_4_img{
+    width: 60%;
+    height: 80%;
+    border-radius: 1vh;
+}
 
 .section_4_box{
     display: flex;
-    margin: 10% 6%;
+    margin: -2% 6%;
 }
 
 .section_4_text{
     display: flex;
     flex-direction: column;
-    gap: 3vh;
-    padding: 10vh 0 0 13vh;
+    gap: 2vh;
+    width: 30%;
+    padding: 5% 5% 5% 5%;
+    font-size: 2.5vh;
+}
+
+.section_4_text h3{
+    font-size: 4vh;
+    font-weight: 600;
+}
+
+.section_4_text p{
+    color:var(--font-color);
 }
 
 .section_4_text .standard_button{
     width: 60%;
-    height: 7vh;
+    height: 8vh;
+    margin-top: 4vh;
+    font-size: 2.6vh;
 }
 
 /* @@@ SECTION 5 @@@ */
@@ -273,7 +382,7 @@ main{
 .section_8_box{
     display: flex;
     background-color: var(--main-color);
-    margin: 10vh 25vh;
+    margin: 5% 15%;
     padding: 10vh 15vh;
     justify-content: space-between;
 }
