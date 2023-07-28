@@ -174,6 +174,7 @@ main{
     display: flex;
     justify-content: space-between;
     padding-top: 10%;
+    gap: 5%;
 }
 
 /* @@@ SECTION 2 @@@*/
@@ -375,7 +376,7 @@ main{
 .section_6_box{
     display: flex;
     flex-direction: column;
-    margin: 12% 2% 5% 2%;
+    margin: 11% 2% 5% 2%;
     align-items: center;
     gap: 3vh;
 }
@@ -428,6 +429,7 @@ main{
 
 .section_7_box > .standard_button{
     height: 8vh;
+    
     width: 25%;
     margin-top: 5%;
     font-size: 2.6vh;
@@ -438,27 +440,48 @@ main{
 .section_8_box{
     display: flex;
     background-color: var(--main-color);
-    margin: 5% 15%;
-    padding: 10vh 15vh;
+    margin: 9% 12%;
+    padding: 6vh 10vh;
     justify-content: space-between;
 }
 
 .section_8_text{
     display: flex;
     flex-direction: column;
-    gap: 2vh;
+    gap: 1vh;
     color: white;
-    font-size: 3vh;
+    font-size: 4.5vh;
+    width: 40%;
+}
+
+.section_8_text p{
+    font-size: 2.5vh;
 }
 
 .section_8_submit {
     display: flex;
-    padding: 0 10vh 0 0;
+}
+
+.section_8_submit input {
+    display: flex;
+    align-self: center;
+    border-style: none;
+    font-size: 2.4vh;
+    font-weight: 400;
+    color: var(--font-color);
+    padding: 4%;
+}
+
+.section_8_submit #email_input {
+    width: 50vh;    
 }
 
 .section_8_submit #email_submit {
     background-color: black;
     color: white;
+    font-weight: 700;
+    font-size: 2.6vh;
+    margin-right: 2%;
 }
 
 /* @@@ SECTION 9 @@@ */
@@ -466,8 +489,9 @@ main{
 .section_9_box{
     display: flex;
     justify-content: space-around;
-    padding: 10vh 5vh;
+    padding: 10vh 6vh;
     background-color: rgba(245, 245, 245, 0.37);
+    font-size: 2.8vh;
 }
 
 .section_9_box dl{
@@ -478,7 +502,7 @@ main{
 
 .section_9_box dt{
     padding-bottom: 3vh;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 /* @@@ SECTION 9 @@@ */
@@ -486,20 +510,22 @@ main{
 .section_10_box{
     display: flex;
     justify-content: space-between;
-    padding: 3vh 10vh;
+    padding: 2vh 12vh;
     background-color: rgba(245, 245, 245, 0.897);
     align-items: center;
+    color: var(--font-color);
 }
 
 
 .section_10_box .social_media{
     display: flex;
-    gap: 3vh;
+    gap: 4vh;
+    margin-right: 5vh;
 }
 
 .section_10_box .social_media a i{
-    font-size: 3vh;
-    padding: 25%;
+    font-size: 2.5vh;
+    padding: 50%;
     color: white;
     background-color:  var(--main-color);
     border-radius: 50%;
